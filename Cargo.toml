@@ -1,0 +1,16 @@
+[package]
+name = "tonic-gcp-pubsub"
+version = "0.1.0"
+edition = "2018"
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+prost = "0.8.0"
+tonic = { version ="0.5.2", features = ["tls"] }
+tokio = { version = "1.10.1", features = ["macros", "rt-multi-thread"] }
+prost-types = "0.8.0"
+
+[build-dependencies]
+tonic-build = "0.5.2"
